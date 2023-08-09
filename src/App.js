@@ -1,5 +1,5 @@
 import './App.css';
-import Stars from "./components/Stars";
+import Stars from "./components/Stars.tsx";
 import punk from './assets/img/punk.webp'
 import zero from './assets/img/zero.webp'
 import lotr from './assets/img/lotr.webp'

@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
+type prop = { count?: number };
 
-function Stars({ count }) {
+function Stars({ count }: prop) {
   if (count > 5 || count < 0)
     return
 
-  let i = 0
+  let i: number = 0
   let stars = []
 
   while (i < count) {
@@ -25,10 +25,6 @@ function Stars({ count }) {
       { stars }
     </ul>
   )
-}
-
-Stars.propTypes = {
-  count: PropTypes.number
 }
 
 export default Stars
